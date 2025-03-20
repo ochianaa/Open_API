@@ -107,3 +107,31 @@ paths:
               application/json:
                 schema:
                   $ref: '#/components/schemas/users'
+
+  /user:
+    post:
+      description: 'endpoint untuk menambahkan data user'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+                age:
+                  type: integer
+      parameters: []
+      responses:
+        '200':
+          description: berhasil
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/users'
+        '500':
+          description: Server Gagal
+        '403':
+          description: Tidak diijinkan
