@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "dependencies": {
     "express": "^4.21.2",
     "mysql2": "^3.14.0"
@@ -20,5 +21,6 @@
     "url": "https://github.com/ochianaa/Open_API/issues"
   },
   "homepage": "https://github.com/ochianaa/Open_API#readme",
+  "devDependencies": {},
   "description": ""
 }
